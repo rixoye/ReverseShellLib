@@ -6,7 +6,7 @@
 
 #define ExitCode 0xffff
 #define ExitStr "close"
-#define BUF_SIZE 1024
+#define BUF_SIZE 4096
 #define DEBUG
 #define TRACE(fmt,...) debugPrint(##fmt,__FILE__,__LINE__, ##__VA_ARGS__)
 
