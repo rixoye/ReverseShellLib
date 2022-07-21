@@ -182,6 +182,8 @@ Error HttpsServer::Comminicate()
 	return Error::Success;
 }
 
+// 同样会出现接收不全的情况，需要还是需要一个msg消息结构
+// 使用简单解决方法，把bufsize从1024扩展到4096
 PCHAR HttpsServer::Recv()
 {
 	if (recvBuf)free(recvBuf);
@@ -189,8 +191,7 @@ PCHAR HttpsServer::Recv()
 	if (!recvBuf)TRACE(Error::Malloc);
 	memset(recvBuf, 0, BUF_SIZE);
 	recvSize = SSL_read(cSSL, recvBuf, BUF_SIZE);
-
-
+	
 	if (recvSize <= 0) {
 		TRACE(Error::Recv);
 	}
