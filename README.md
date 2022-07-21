@@ -19,7 +19,7 @@ Server s(888);
 
 
 #### httpsShell
-1.使用前需要配置openssl，文档参考:https://www.jianshu.com/p/8ac6a177aa73
+1. 使用前需要配置openssl，文档参考:https://www.jianshu.com/p/8ac6a177aa73
 2. 密钥生成方法：
 ```
 openssl genpkey -algorithm RSA -out privkey.pem -pkeyopt rsa_keygen_bits:2048
