@@ -145,13 +145,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\client.cpp" />
-    <ClCompile Include="..\..\httpsShellLib.cpp" />
-    <ClCompile Include="..\..\sockLib.cpp" />
+    <ClCompile Include="..\..\..\src\httpsShellLib.cpp" />
+    <ClCompile Include="..\..\..\src\sockLib.cpp" />
+    <ClCompile Include="client.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\httpsShellLib.h" />
-    <ClInclude Include="..\..\sockLib.h" />
+    <ClInclude Include="..\..\..\src\httpsShellLib.h" />
+    <ClInclude Include="..\..\..\src\sockLib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

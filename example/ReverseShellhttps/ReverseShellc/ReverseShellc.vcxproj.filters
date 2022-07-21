@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\client.cpp">
+    <ClCompile Include="client.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\httpsShellLib.cpp">
+    <ClCompile Include="..\..\..\src\httpsShellLib.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\sockLib.cpp">
+    <ClCompile Include="..\..\..\src\sockLib.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\httpsShellLib.h">
+    <ClInclude Include="..\..\..\src\httpsShellLib.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\sockLib.h">
+    <ClInclude Include="..\..\..\src\sockLib.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
